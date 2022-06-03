@@ -86,9 +86,15 @@ color_world = add_color(img)
 
 fig=plt.figure(frameon=False)
 fig.set_size_inches(xpix, ypix)
+
+#if you want to generate perlin noise heightmap with colors
+
 plt.imshow(color_world, aspect='auto')
 plt.savefig("output.png")
 print('Image Saved!')
+
+#if you want to generate just the perlin noise heightmap without colors
+#plt.imshow(img, cmap = 'gray', aspect = 'auto)
 
 
 
