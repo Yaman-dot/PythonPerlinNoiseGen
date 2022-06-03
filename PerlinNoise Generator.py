@@ -38,9 +38,6 @@ for i in range (xpix):
         noise_val += 0.0625 * noise5([i/xpix, j/ypix])
         noise_val += 0.03125 * noise6([i/xpix, j/ypix])
 
-
-        persistence = persistence
-
         row.append(noise_val)
     img.append(row)
 
