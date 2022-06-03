@@ -7,6 +7,7 @@ import numpy as np
 from perlin_noise import PerlinNoise
 
 #Variables
+
 randSeedInt = randint(100, 10000000) #you can change this to your liking
 
 noise1 = PerlinNoise(octaves=6, seed=randSeedInt)
@@ -16,13 +17,14 @@ noise4 = PerlinNoise(octaves=48, seed=randSeedInt)
 noise5 = PerlinNoise(octaves=96, seed=randSeedInt)
 noise6 = PerlinNoise(octaves=196, seed=randSeedInt)
 
-persistence = float(input("Enter A number For Persistence : "))
 
 
 #specify image size
-xpic = int(input("Enter number: "))
-ypic = int(input("Enter number: "))
+
+xpic = int(input("Enter number For X Pixels: "))
+ypic = int(input("Enter number For Y Pixels: "))
 xpix, ypix = xpic, ypic
+
 #generate noise
 img = []
 
@@ -43,6 +45,7 @@ for i in range (xpix):
     img.append(row)
 
 print("Seed is : ",randSeedInt)
+
 #color the image
     
 blue  = [65,105,225]
