@@ -1,8 +1,6 @@
 import matplotlib.pyplot as plt
 from random import seed
 from random import randint
-import noise 
-from PIL import Image
 import numpy as np
 from perlin_noise import PerlinNoise
 
@@ -92,13 +90,4 @@ print('Image Saved!')
 
 #if you want to generate just the perlin noise heightmap without colors
 #plt.imshow(img, cmap = 'gray', aspect = 'auto)
-
-
-
-
-
-#image = Image.new('RGB' , (xpix, ypix))
-#pixels = image.load()
-#image = Image.fromarray(img.array(color_world) * 255, 'RGB')
-#image.save('output.png', "png")
 
